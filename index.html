@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Blood Now</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Add your custom styles here -->
+</head>
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      /* color: #faf7f7; */
+      font-size: 20px;
+    }
+
+
+    .container {
+      width: 50%;
+      margin: auto;
+      padding: 20px;
+      background: rgba(9, 9, 9, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+      margin-top: 50px;
+    }
+
+    .cont{
+        /* width: 50%; */
+      margin: auto;
+      padding: 20px;
+      background: rgba(252, 251, 251, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin-top: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight:bold ;
+      text-decoration: underline;
+      text-shadow: #1a2531;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    label {
+      margin: 10px 0;
+    }
+
+    input, select {
+      padding: 10px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #1a2531;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #b30300;
+    }
+
+    nav {
+      background-color: #ff1e00;
+      padding: 1em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    h1, h2 {
+      color: #ff1e00;
+    }
+
+    ul.res{
+        font-size: 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 1em 2em;
+      background-color: #ff1e00;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #ff1e00;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      position:fixed;
+      bottom: 0;
+      height: 22px;
+      width: 100%;
+    }
+  </style>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#donate">Donate Now</a></li>
+      <li><a href="#centers">Find a Center</a></li>
+      <li><a href="#resources">Donor Resources</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Homepage -->
+  <section id="home">
+    <h1>Welcome to Donate Blood Now</h1>
+    <p>Save lives by donating blood. Join us in making a difference!</p>
+    <p>World Blood Donor Day takes place on 14 June each year. The Day was created to:</p>
+<ul>
+    <li> raise global awareness of the need for safe blood and blood products for transfusion;</li>
+    <li> highlight the critical contribution voluntary, unpaid blood donors make to national health systems;</li>
+    <li>    support national blood transfusion services, blood donor organizations and other nongovernmental organizations in strengthening and expanding their voluntary blood donor programmes by reinforcing national and local campaigns
+    </li>
+</ul>
+    
+    
+    <a href="#donate" class="cta-button">Donate Now</a>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Learn about our mission to provide a steady and safe blood supply to those in need.</p>
+    <p>
+
+        We’ll sign you in and go over basic eligibility. You’ll be asked to show ID, such as your driver’s license. You’ll read some information about donating blood. We’ll ask you for your complete address.  Your address needs to be complete (including PO Box, street/apartment number) and the place where you will receive your mail 8 weeks from donation. 
+    
+    </p>
+    <!-- Add more content about the organization and the blood donation process -->
+  </section>
+
+  <!-- Donate Now -->
+  <section id="donate">
+    <h2>Donate Now</h2>
+    <p>Ready to make a difference? Schedule your blood donation appointment now.</p>
+    <a href="#donate-form" class="cta-button">Schedule Appointment</a>
+    <!-- Add information about eligibility, what to expect, etc. -->
+  </section>
+
+  <div class="container">
+    <h1>Blood Donation Form</h1>
+    <form id="donationForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="bloodType">Blood Type:</label>
+      <select id="bloodType" name="bloodType" required>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option>
+      </select>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+
+
+  <!-- Find a Donation Center -->
+  <section id="centers">
+    <h2>Find a Donation Center</h2>
+    <div class="cont">
+        <div class="center">
+          <h2>City Blood Center</h2>
+          <p><strong>Address:</strong> 123 Main Street, Cityville , Mayurvihar Phase-II , New Delhi(110543)</p>
+          <p><strong>Contact:</strong> (555) 123-4567</p>
+        </div>
+    
+        <div class="center">
+          <h2>Community Blood Bank</h2>
+          <p><strong>Address:</strong> 456 Oak Avenue, Townsville , Vasant Vihar , CPWD Colony , New Delhi(110011)</p>
+          <p><strong>Contact:</strong> (555) 987-6543</p>
+        </div>
+    <!-- Add a map or a list of donation centers with addresses and contact information -->
+  </section>
+
+  <!-- Donor Resources & procedure-->
+  <section id="resources">
+    <h2>Donor Procedure & Recovery</h2>
+    <ul class="res">
+        <li>If you’re donating whole blood, we’ll cleanse an area on your arm and insert a brand new sterile needle for the blood draw. (This feels like a quick pinch and is over in seconds.)</li>
+        <li>Other types of donations, such as platelets, are made using an apheresis machine which will be connected to both arms.</li>
+        <li>A whole blood donation takes about 8-10 minutes, during which you’ll be seated comfortably or lying down.</li>
+        <li>When approximately a pint of whole blood has been collected, the donation is complete and a staff person will place a bandage on your arm.</li>
+        <li>For platelets, the apheresis machine will collect a small amount of blood, remove the platelets, and return the rest of the blood through your other arm; this cycle will be repeated several times over about 2 hours. </li>
+    </ul>
+<h4>Refreshement & Recovery</h4>
+    <ul>
+       <li>After donating blood, you’ll have a snack and something to drink in the refreshment area.</li> 
+         <li>You’ll leave after 10-15 minutes and continue your normal routine. </li>
+        <li>Enjoy the feeling of accomplishment knowing you are helping to save lives. </li> 
+         <li>Take a selfie, or simply share your good deed with friends. It may inspire them to become blood donors.</li>
+    </ul>
+    <!-- Include educational content, FAQs, and downloadable materials -->
+  </section>
+
+  <!-- Events and Campaigns -->
+  <section id="events">
+    <h2>Events and Campaigns</h2>
+    <ul>
+        <li>Poshan Pakhwara</li>
+        <li>Celebrating Girl Child</li>
+        <li>Azadi Ka Amrit Kaal</li>
+        <li>Nirbhay Bharat-Sashakti Nari</li>
+        <li>Celebrating Unheard Voices</li>
+        <li>Apprentices Mela</li>
+        <li>Olympiads</li>
+        <li>Khoon Daan Yojana</li>
+    </ul>
+    <!-- Display information about upcoming blood drives, events, and campaigns -->
+  </section>
+
+
+  <!-- Contact Us -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> T-EXTN , Vishwas Park , Uttam Nagar West , New Delhi(110059)</p>
+    <p><strong>Contact:</strong> (555) 345-8756</p>
+    <p><strong>E-mail:</strong>balidandonateblood@gmail.com</p>
+    <!-- Provide contact information, a contact form, and links to social media -->
+  </section>
+
+    <!-- Sign Up Form -->
+    <section id="signup" class="signup">
+        <div class="container">
+          <h2>Sign Up for Updates</h2>
+          <form id="signupForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Donate Blood Now. All rights reserved.</p>
+  </footer>
+
+  <script >
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    // Add your form submission logic here
+    alert('Form submitted!');
+  });
+  
+
+        function submitForm() {
+      // You can add form validation and submission logic here
+      alert("Form submitted successfully!");
+    }
+  </script>
+</body>
+</html>
